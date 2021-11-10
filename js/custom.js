@@ -133,7 +133,7 @@ $(function () {
 	/* Scroll to Top
 	-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
 
-	$(window).on('scroll', function () {
+	/** $(window).on('scroll', function () {
 		scroll = $(window).scrollTop();
 		if (scroll >= 100) {
 			$("#back-to-top").addClass('b-show_scrollBut')
@@ -149,7 +149,7 @@ $(function () {
 
 	/* Contact-form
 	-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
-	$.validator.setDefaults({
+	/** $.validator.setDefaults({
 		submitHandler: function () {
 			alert("submitted!");
 		}
@@ -196,7 +196,7 @@ $(function () {
 				$(element).parents(".col-md-4, .col-md-12").addClass("has-success").removeClass("has-error");
 			}
 		});
-	});
+	}); */
 
 	/* heroslider
 	-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
@@ -368,5 +368,16 @@ $(function () {
 		interval: 5000
 	});
 
+	$(window).load(function () {
+		/**$(".trigger_popup_fricc").click(function(){
+		   $('.hover_bkgr_fricc').show();
+		});*/
+		$('.hover_bkgr_fricc').click(function(){
+			$('.hover_bkgr_fricc').hide();
+		});
+		$('.popupCloseButton').click(function(){
+			$('.hover_bkgr_fricc').hide();
+		});
+	});
 
 });

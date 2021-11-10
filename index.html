@@ -44,7 +44,7 @@
                         <div class="full">
                            <div class="center-desk">
                               <div class="logo">
-                                 <a href="index.html"><img src="images/logo.png" alt="#" /></a>
+                                 <a href="https://www.duden.de/rechtschreibung/Sternenlicht" target="_blank"><img src="images/logo.png" alt="#" /></a>
                               </div>
                            </div>
                         </div>
@@ -57,13 +57,12 @@
                            <div class="collapse navbar-collapse" id="navbarsExample04">
                               <ul class="navbar-nav mr-auto">
                                  <li class="nav-item">
-                                    <a class="nav-link" href="#"> Home  </a>
+                                    <a class="nav-link" href="#">Gallerie</a>
                                  </li>
+                              </ul>
+                              <ul class="navbar-nav mr-auto">
                                  <li class="nav-item">
-                                    <a class="nav-link" href="#contact">About</a>
-                                 </li>
-                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Contact</a>
+                                    <a class="nav-link" href="#">Support</a>
                                  </li>
                               </ul>
                            </div>
@@ -81,8 +80,7 @@
                      <div class="col-md-12">
                         <div class="text-bg">
                            <span>Becci's & Oli's Hochzeit</span>
-                           <h1>2020 / 2021</h1>
-                           <a href="#">Read More</a>
+                           <h1>2021 / 2022</h1>
                         </div>
                      </div>
                   </div>
@@ -97,8 +95,8 @@
             <div class="row">
                <div class="col-md-12">
                   <div class="titlepage">
-                     <h2>Who We Are</h2>
-                     <span>d to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum gener</span>
+                     <h2>Herzlichen Glückwunsch</h2>
+                     <span>Ihr habt es bis hier her geschafft. Aber die Reise ist noch nicht zu Ende - sie beginnt erst.</span>
                   </div>
                </div>
             </div>
@@ -125,18 +123,12 @@
                      </div>
                   </div>
                </div>
-               <div class="col-md-12">
-                  <div class="weare_box">
-                     <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat pre</p>
-                     <a class="read_more" href="#">Read more</a>
-                  </div>
-               </div>
             </div>
          </div>
       </div>
       <!-- weare -->
       <!-- Our -->
-      <div id="" class="Our">
+      <!--<div id="" class="Our">
          <div class="container">
             <div class="row">
                <div class="col-md-12">
@@ -173,7 +165,7 @@
                </div>
             </div>
          </div>
-      </div>
+      </div>-->
       <!-- end Our -->
       <!-- regist -->
       <div id="regist" class="regist">
@@ -181,8 +173,8 @@
             <div class="row">
                <div class="col-md-12">
                   <div class="titlepage">
-                     <h2>Get Registered</h2>
-                     <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</span>
+                     <h2>Lasst uns beginnen...</h2>
+                     <span>Ihr findet überall kleine Hinweise auf das, was euch erwartet. Findet ihr alle Lösungsworte??</span>
                   </div>
                </div>
             </div>
@@ -192,27 +184,37 @@
                <div class="col-md-12 ">
                   <form class="main_form">
                      <div class="row">
-                        <div class="col-md-6 ">
-                           <input class="contactus" placeholder="First Nmae" type="text" name="First Nmae">
+                        <div class="col-md-12 ">
+                           <input id="inputThomas" class="contactus" placeholder="Welchen Beruf hat T.E.?" type="text">
                         </div>
-                        <div class="col-md-6">
-                           <input class="contactus" placeholder="Last Name" type="text" name=" Last Name">
+                        <div class="col-md-12 ">
+                           <input id="inputStars" class="contactus" placeholder="Schaut in die Sterne. Was sagen sie euch?" type="text">
                         </div>
-                        <div class="col-md-6">
-                           <input class="contactus" placeholder="Email Address" type="text" name="Email Address">
+                        <div class="col-md-12 ">
+                           <input id="inputBochum" class="contactus" placeholder="Wer ist keine Schönheit und von Arbeit ganz grau?" type="text">
                         </div>
-                        <div class="col-md-6">
-                           <input class="contactus" placeholder="Date of The Event " type="text" name="Date of The Event ">
+                        <div class="col-md-12 ">
+                           <input id="inputStarlight" class="contactus" placeholder="Geduld ist eine Tugend..." title="Das Zeichen der Ehe wird euch führen." type="text">
                         </div>
                         <div class="col-sm-12">
-                           <button class="register">Register Now</button>
+                          <button class="register trigger_popup_fricc" type="button" onclick="checkAnswers()">Abschicken</button>                           
                         </div>
                      </div>
                   </form>
                </div>
             </div>
          </div>
+         <div id="successPopup" class="hover_bkgr_fricc">
+            <span class="helper"></span>
+            <div>
+                <div class="popupCloseButton">&times;</div>
+                <p>Sehr gut! <br />Bitte tragt nachfolgend einige Wochenenden ein, die ihr anbieten könnt. Unser Kundenservice tritt dann für alles weitere mit Euch in Verbindung. <br /><br /> Bei Fragen und Problemen, bitte an den Support wenden.<br /><br /><br />
+                  <a href="https://calendar.google.com/calendar/u/2?cid=ZGVyLnRvbGxlLmthbGVuZGVyQGdtYWlsLmNvbQ" target="_blank">Hier geht es weiter...</a>
+               </p>
+            </div>
+        </div>
       </div>
+      <div id="wrongSnackbar">Irgendwas stimmt hier nicht...</div>
       <!-- end regist -->
       <!-- testimonial -->
       <div class="testimonial">
@@ -220,9 +222,8 @@
             <div class="row">
                <div class="col-md-12">
                   <div class="titlepage">
-                     <h2>Testimonial</h2>
-                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore<br> et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud  </p>
-                  </div>
+                     <h2>Was andere sagen...</h2>
+                    </div>
                </div>
             </div>
             <div class="row">
@@ -241,45 +242,19 @@
                                     <div  class="col-md-6">
                                        <div class="test_box">
                                           <div class="jons">
-                                             <i><img src="images/jons_img1.png" alt="#"/></i>
-                                             <h4>Jonson Donat</h4>
+                                             <i><img src="images/Heiko.png" alt="#"/></i>
+                                             <h4>Heiko R.</h4>
                                           </div>
-                                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod aliquip ex ea commodo consequat. Duis aute irure dolor in reprehe</p>
+                                          <p>Was ein tolles Paar. Da kann man nur neidisch sein.</p>
                                        </div>
                                     </div>
                                     <div  class="col-md-6">
                                        <div class="test_box">
                                           <div class="jons">
-                                             <i><img src="images/jons_img2.png" alt="#"/></i>
-                                             <h4>Jonson Donat</h4>
+                                             <i><img src="images/Nanni.png" alt="#"/></i>
+                                             <h4>Nanni S.</h4>
                                           </div>
-                                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod aliquip ex ea commodo consequat. Duis aute irure dolor in reprehe</p>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="carousel-item">
-                           <div class="container">
-                              <div class="carousel-caption">
-                                 <div class="row">
-                                    <div  class="col-md-6">
-                                       <div class="test_box">
-                                          <div class="jons">
-                                             <i><img src="images/jons_img1.png" alt="#"/></i>
-                                             <h4>Jonson Donat</h4>
-                                          </div>
-                                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod aliquip ex ea commodo consequat. Duis aute irure dolor in reprehe</p>
-                                       </div>
-                                    </div>
-                                    <div  class="col-md-6">
-                                       <div class="test_box">
-                                          <div class="jons">
-                                             <i><img src="images/jons_img2.png" alt="#"/></i>
-                                             <h4>Jonson Donat</h4>
-                                          </div>
-                                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod aliquip ex ea commodo consequat. Duis aute irure dolor in reprehe</p>
+                                          <p>Schöne Frau, schöner Mann - mehr kann man da nicht zu sagen.</p>
                                        </div>
                                     </div>
                                  </div>
@@ -293,19 +268,45 @@
                                     <div  class="col-md-6">
                                        <div class="test_box">
                                           <div class="jons">
-                                             <i><img src="images/Picture01.jpg" alt="#"/></i>
-                                             <h4>Jonson Donat</h4>
+                                             <i><img src="images/Thomas.png" alt="#"/></i>
+                                             <h4>T. E.</h4>
                                           </div>
-                                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod aliquip ex ea commodo consequat. Duis aute irure dolor in reprehe</p>
+                                          <p>Tolle Menschen! Ich freue mich schon, die beiden bei uns begrüßen zu dürfen.</p>
+                                       </div>
+                                    </div>
+                                    <div  class="col-md-6">
+                                       <div class="test_box">
+                                          <div class="jons">
+                                             <i><img src="images/Simon.png" alt="#"/></i>
+                                             <h4>Simon H.</h4>
+                                          </div>
+                                          <p>Einfach WOW!</p>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="carousel-item">
+                           <div class="container">
+                              <div class="carousel-caption">
+                                 <div class="row">
+                                    <div  class="col-md-6">
+                                       <div class="test_box">
+                                          <div class="jons">
+                                             <i><img src="images/Simon.png" alt="#"/></i>
+                                             <h4>Simon H.</h4>
+                                          </div>
+                                          <p>Man muss sie einfach gern haben - bleibt so, wie ihr seid.</p>
                                        </div>
                                     </div>
                                     <div  class="col-md-6">
                                        <div class="test_box">
                                           <div class="jons">
                                              <i><img src="images/jons_img2.png" alt="#"/></i>
-                                             <h4>Jonson Donat</h4>
+                                             <h4>Christoph D.</h4>
                                           </div>
-                                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod aliquip ex ea commodo consequat. Duis aute irure dolor in reprehe</p>
+                                          <p>Was hätte ich gerne dieses Gemächt...</p>
                                        </div>
                                     </div>
                                  </div>
@@ -330,35 +331,65 @@
       <!--  footer -->
       <footer>
          <div class="footer">
-            <div class="container">
-               <div class="row">
-                  <div class="col-md-10 offset-md-1">
-                     <div class="cont">
-                        <h3> <strong class="multi"> Free Multipurpose</strong><br>
-                           Responsive Landing Page 2019
-                        </h3>
-                     </div>
-                  </div>
-               </div>
-            </div>
+            
             <div class="copyright">
                <div class="container">
                   <div class="row">
                      <div class="col-md-12">
+                        <button class="invisibleButton" onclick="showSnackbar('snackbar')"><img src="images/stars.png" alt="#" /></button>           
+                                 <div id="snackbar">4 Rollen</div>
                         <p>Copyright 2019 All Right Reserved By <a href="https://html.design/"> Free  html Templates</a></p>
+                        
                      </div>
                   </div>
                </div>
             </div>
          </div>
       </footer>
+
       <!-- end footer -->
       <!-- Javascript files-->
+
+<!-- The actual snackbar -->
       <script src="js/jquery.min.js"></script>
       <script src="js/popper.min.js"></script>
       <script src="js/bootstrap.bundle.min.js"></script>
       <script src="js/jquery-3.0.0.min.js"></script>
       <script src="js/plugin.js"></script>
+      <script>
+         const sThomas = "Bürgermeister";
+         const sStars  = "4 Rollen";
+         const sBochum = "Bochum";
+         const sStarlight = "Sternenlicht";
+
+         const sCalenderUrl = "https://calendar.google.com/calendar/u/2?cid=ZGVyLnRvbGxlLmthbGVuZGVyQGdtYWlsLmNvbQ";
+
+         function showSnackbar(sId) {
+           var oElement = document.getElementById(sId);
+           oElement.className = "show";
+           setTimeout(function(){ oElement.className = oElement.className.replace("show", ""); }, 3000);
+         }
+
+         function showPopup(sId) {
+            $('.hover_bkgr_fricc').show();
+         }
+
+         function checkAnswers() {
+            var oInputThomas    = document.getElementById("inputThomas");
+            var oInputStars     = document.getElementById("inputStars");
+            var oInputBochum    = document.getElementById("inputBochum");
+            var oInputStarlight = document.getElementById("inputStarlight");
+
+            if (  oInputThomas.value    === sThomas
+               && oInputStars.value     === sStars
+               && oInputBochum.value    === sBochum
+               && oInputStarlight.value === sStarlight ) {
+                  this.showPopup("successPopup");
+               } else {
+                  this.showSnackbar("wrongSnackbar");
+               }
+         }
+         </script>
       <!-- sidebar -->
       <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
       <script src="js/custom.js"></script>
