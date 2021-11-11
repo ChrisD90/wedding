@@ -1,18 +1,14 @@
-
-
 /*--------------------------------------------------------------------- File Name: style.css ---------------------------------------------------------------------*/
-
 
 /*--------------------------------------------------------------------- import Fonts ---------------------------------------------------------------------*/
 
-@import url('https://fonts.googleapis.com/css?family=Rajdhani:300,400,500,600,700');
-@import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
-@import url('https://fonts.googleapis.com/css?family=Dancing+Script:400,700&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Rajdhani:300,400,500,600,700");
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i");
+@import url("https://fonts.googleapis.com/css?family=Dancing+Script:400,700&display=swap");
 
 /*****---------------------------------------- 1) font-family: 'Rajdhani', sans-serif;
  2) font-family: 'Poppins', sans-serif;
  ----------------------------------------*****/
-
 
 /*--------------------------------------------------------------------- import Files ---------------------------------------------------------------------*/
 
@@ -31,35 +27,35 @@
 /*--------------------------------------------------------------------- skeleton ---------------------------------------------------------------------*/
 /*https://colorhunt.co/palette/999b84926e6fca8a8be6c4c0*/
 :root {
-     --general: #E6C4C0;
-     --button: #999B84;
-   }
+  --general: #e6c4c0;
+  --button: #999b84;
+}
 
 * {
-     box-sizing: border-box !important;
+  box-sizing: border-box !important;
 }
 
 html {
-     scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-     color: #666666;
-     font-size: 14px;
-     font-family: 'Poppins', sans-serif;
-     line-height: 1.80857;
-     font-weight: normal;
+  color: #666666;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.80857;
+  font-weight: normal;
 }
 
 a {
-     color: #1f1f1f;
-     text-decoration: none !important;
-     outline: none !important;
-     -webkit-transition: all .3s ease-in-out;
-     -moz-transition: all .3s ease-in-out;
-     -ms-transition: all .3s ease-in-out;
-     -o-transition: all .3s ease-in-out;
-     transition: all .3s ease-in-out;
+  color: #1f1f1f;
+  text-decoration: none !important;
+  outline: none !important;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 h1,
@@ -68,49 +64,49 @@ h3,
 h4,
 h5,
 h6 {
-     letter-spacing: 0;
-     font-weight: normal;
-     position: relative;
-     padding: 0 0 10px 0;
-     font-weight: normal;
-     line-height: normal;
-     color: #111111;
-     margin: 0
+  letter-spacing: 0;
+  font-weight: normal;
+  position: relative;
+  padding: 0 0 10px 0;
+  font-weight: normal;
+  line-height: normal;
+  color: #111111;
+  margin: 0;
 }
 
 h1 {
-     font-size: 24px;
-     font-family: 'Dancing Script', cursive;
+  font-size: 24px;
+  font-family: "Dancing Script", cursive;
 }
 
 h2 {
-     font-size: 22px;
-     font-family: 'Dancing Script', cursive;
+  font-size: 22px;
+  font-family: "Dancing Script", cursive;
 }
 
 h3 {
-     font-size: 18px;
-     font-family: 'Dancing Script', cursive;
+  font-size: 18px;
+  font-family: "Dancing Script", cursive;
 }
 
 h4 {
-     font-size: 16px
+  font-size: 16px;
 }
 
 h5 {
-     font-size: 14px
+  font-size: 14px;
 }
 
 h6 {
-     font-size: 13px
+  font-size: 13px;
 }
 
 *,
 *::after,
 *::before {
-     -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-     box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 h1 a,
@@ -119,862 +115,949 @@ h3 a,
 h4 a,
 h5 a,
 h6 a {
-     color: #212121;
-     text-decoration: none!important;
-     opacity: 1
+  color: #212121;
+  text-decoration: none !important;
+  opacity: 1;
 }
 
 button:focus {
-     outline: none;
+  outline: none;
 }
 
 ul,
 li,
 ol {
-     margin: 0px;
-     padding: 0px;
-     list-style: none;
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
 }
 
 p {
-     margin: 0px;
-     font-weight: 300;
-     font-size: 15px;
-     line-height: 24px;
+  margin: 0px;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 24px;
 }
 
 a {
-     color: #222222;
-     text-decoration: none;
-     outline: none !important;
+  color: #222222;
+  text-decoration: none;
+  outline: none !important;
 }
 
 a,
 .btn {
-     text-decoration: none !important;
-     outline: none !important;
-     -webkit-transition: all .3s ease-in-out;
-     -moz-transition: all .3s ease-in-out;
-     -ms-transition: all .3s ease-in-out;
-     -o-transition: all .3s ease-in-out;
-     transition: all .3s ease-in-out;
+  text-decoration: none !important;
+  outline: none !important;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 img {
-     max-width: 100%;
-     height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
- :focus {
-     outline: 0;
+:focus {
+  outline: 0;
 }
 
 .btn-custom {
-     margin-top: 20px;
-     background-color: transparent !important;
-     border: 2px solid #ddd;
-     padding: 12px 40px;
-     font-size: 16px;
+  margin-top: 20px;
+  background-color: transparent !important;
+  border: 2px solid #ddd;
+  padding: 12px 40px;
+  font-size: 16px;
 }
 
 .lead {
-     font-size: 18px;
-     line-height: 30px;
-     color: #767676;
-     margin: 0;
-     padding: 0;
+  font-size: 18px;
+  line-height: 30px;
+  color: #767676;
+  margin: 0;
+  padding: 0;
 }
 
 .form-control:focus {
-     border-color: #ffffff !important;
-     box-shadow: 0 0 0 .2rem rgba(255, 255, 255, .25);
+  border-color: #ffffff !important;
+  box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.25);
 }
 
 .navbar-form input {
-     border: none !important;
+  border: none !important;
 }
 
 .badge {
-     font-weight: 500;
+  font-weight: 500;
 }
 
 blockquote {
-     margin: 20px 0 20px;
-     padding: 30px;
+  margin: 20px 0 20px;
+  padding: 30px;
 }
 
 button {
-     border: 0;
-     margin: 0;
-     padding: 0;
-     cursor: pointer;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
 }
 
 .full {
-     float: left;
-     width: 100%;
+  float: left;
+  width: 100%;
 }
 
 .layout_padding {
-     padding-top: 90px;
-     padding-bottom: 90px;
+  padding-top: 90px;
+  padding-bottom: 90px;
 }
 
 .layout_padding_2 {
-     padding-top: 75px;
-     padding-bottom: 75px;
+  padding-top: 75px;
+  padding-bottom: 75px;
 }
 
 .light_silver {
-     background: #f9f9f9;
+  background: #f9f9f9;
 }
 
 .theme_bg {
-     background: #38c8a8;
+  background: #38c8a8;
 }
 
 .margin_top_30 {
-     margin-top: 30px !important;
+  margin-top: 30px !important;
 }
 
 .full {
-     width: 100%;
-     float: left;
-     margin: 0;
-     padding: 0;
+  width: 100%;
+  float: left;
+  margin: 0;
+  padding: 0;
 }
 
-
 /**-- heading section --**/
-
 
 /*---------------------------- preloader area ----------------------------*/
 
 .loader_bg {
-     position: fixed;
-     z-index: 9999999;
-     background: #fff;
-     width: 100%;
-     height: 100%;
+  position: fixed;
+  z-index: 9999999;
+  background: #fff;
+  width: 100%;
+  height: 100%;
 }
 
 .loader {
-     height: 100%;
-     width: 100%;
-     position: absolute;
-     left: 0;
-     top: 0;
-     display: flex;
-     justify-content: center;
-     align-items: center;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .loader img {
-     width: 280px;
+  width: 280px;
 }
-
 
 /*-- navigation--*/
 
 .navigation.navbar {
-     float: right;
-     padding-top: 12px;
+  float: right;
+  padding-top: 12px;
 }
 
 .navigation.navbar-dark .navbar-nav .nav-link {
-     padding: 0 25px;
-     color: #d8516e;
-     font-size: 16px;
-     line-height: 20px;
+  padding: 0 25px;
+  color: #d8516e;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .navigation.navbar-dark .navbar-nav .nav-link:focus,
 .navigation.navbar-dark .navbar-nav .nav-link:hover {
-     color: val(--button);;
+  color: val(--button);
 }
 
-.navigation.navbar-dark .navbar-nav .active>.nav-link,
+.navigation.navbar-dark .navbar-nav .active > .nav-link,
 .navigation.navbar-dark .navbar-nav .nav-link.active,
 .navigation.navbar-dark .navbar-nav .nav-link.show,
-.navigation.navbar-dark .navbar-nav .show>.nav-link {
-     color: #fdd430;
+.navigation.navbar-dark .navbar-nav .show > .nav-link {
+  color: #fdd430;
 }
-
 
 /*-- header area --*/
 
-
 /*--------------------------------------------------------------------- top banner area ---------------------------------------------------------------------*/
-
 
 /*--------------------------------------------------------------------- layout new css ---------------------------------------------------------------------*/
 
 .head_top {
-     background: url(../images/banner.jpg);
-     background-size: 100% 100%;
-     background-repeat: no-repeat;
-     padding-top: 60px;
-     background-position: center;
-     border-radius: 0px 0px 170px 170px;
-     background-size: cover;
+  background: url(../images/banner.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  padding-top: 60px;
+  background-position: center;
+  border-radius: 0px 0px 170px 170px;
+  background-size: cover;
 }
 
 .header {
-     width: 100%;
-     background: #fff;
-     border-radius: 50px;
-     padding: 15px 30px;
+  width: 100%;
+  background: #fff;
+  border-radius: 50px;
+  padding: 15px 30px;
 }
 
 .logo a {
-     font-size: 40px;
-     font-weight: bold;
-     text-transform: uppercase;
-     color: #fff;
-     line-height: 40px;
-     cursor: default;
+  font-size: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  line-height: 40px;
+  cursor: default;
 }
 
 .banner_main {
-     padding: 90px 0;
+  padding: 90px 0;
 }
 
 .text-bg {
-     text-align: center;
+  text-align: center;
 }
 
 .text-bg h1 {
-     color: #fff;
-     font-size: 75px;
-     line-height: 90px;
-     padding-bottom: 70px;
-     font-weight: bold;
+  color: #fff;
+  font-size: 75px;
+  line-height: 90px;
+  padding-bottom: 70px;
+  font-weight: bold;
 }
 
 .text-bg span {
-     font-family: 'Dancing Script', cursive;
-     color: #fff;
-     font-size: 60px;
-     line-height: 77px;
-     font-weight: bold;
-     padding-bottom: 20px;
-     display: block;
+  font-family: "Dancing Script", cursive;
+  color: #fff;
+  font-size: 60px;
+  line-height: 77px;
+  font-weight: bold;
+  padding-bottom: 20px;
+  display: block;
 }
 
 .text-bg p {
-     color: #fff;
-     font-size: 17px;
-     line-height: 28px;
-     padding: 40px 0;
+  color: #fff;
+  font-size: 17px;
+  line-height: 28px;
+  padding: 40px 0;
 }
 
 .text-bg a {
-     font-size: 17px;
-     background-color: #999B84;
-     color: white;
-     padding: 13px 0px;
-     width: 100%;
-     max-width: 190px;
-     text-align: center;
-     display: inline-block;
-     transition: ease-in all 0.5s;
-     border-radius: 26px;
+  font-size: 17px;
+  background-color: #999b84;
+  color: white;
+  padding: 13px 0px;
+  width: 100%;
+  max-width: 190px;
+  text-align: center;
+  display: inline-block;
+  transition: ease-in all 0.5s;
+  border-radius: 26px;
 }
 
 .text-bg a:hover {
-     background-color: #999B84;
-     color: white;
-     box-shadow: inset 0 0 20px rgba(255, 255, 255, .5), 0 0 20px rgba(255, 255, 255, .2);
-     outline-color: rgba(255, 255, 255, 0);
-     outline-offset: 15px;
+  background-color: #999b84;
+  color: white;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5),
+    0 0 20px rgba(255, 255, 255, 0.2);
+  outline-color: rgba(255, 255, 255, 0);
+  outline-offset: 15px;
 }
 
 .text-img figure {
-     margin: 0px;
+  margin: 0px;
 }
 
 .text-img figure img {
-     width: 100%;
+  width: 100%;
 }
 
 .titlepage {
-     text-align: center;
-     padding-bottom: 60px;
+  text-align: center;
+  padding-bottom: 60px;
 }
 
 .titlepage h2 {
-     font-size: 60px;
-     color: #3e3e3e;
-     line-height: 77px;
-     font-weight: bold;
-     padding: 0;
+  font-size: 60px;
+  color: #3e3e3e;
+  line-height: 77px;
+  font-weight: bold;
+  padding: 0;
 }
 
 .d_flex {
-     display: flex;
-     align-items: center;
-     flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
 }
-
 
 /** weare section **/
 
 .weare {
-     background: #fff;
-     padding-top: 90px;
+  background: #fff;
+  padding-top: 90px;
 }
 
 .weare .titlepage h2 {
-     margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .weare .titlepage h2::after {
-     border-bottom: var(--general) solid 1px;
-     content: "";
-     position: absolute;
-     bottom: 0;
-     left: 0;
-     right: 0;
-     width: 100%;
-     max-width: 259px;
-     margin: 0 auto;
+  border-bottom: var(--general) solid 1px;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  max-width: 259px;
+  margin: 0 auto;
 }
 
 .weare .weare_box {
-     text-align: center;
+  text-align: center;
 }
 
 .weare .weare_box figure {
-     margin: 0;
+  margin: 0;
 }
 
 .weare .weare_box figure img {
-     border-radius: 190px;
-     background: var(--general);
-     padding: 15px;
+  border-radius: 190px;
+  background: var(--general);
+  padding: 15px;
 }
 
 .weare .weare_box p {
-     color: #000;
-     font-size: 17px;
-     line-height: 28px;
-     padding: 35px 0px;
+  color: #000;
+  font-size: 17px;
+  line-height: 28px;
+  padding: 35px 0px;
 }
 
 .weare .weare_box .read_more {
-     background: #000;
-     color: #fff;
+  background: #000;
+  color: #fff;
 }
 
 .weare .weare_box .read_more:hover {
-     background: var(--general);
+  background: var(--general);
 }
 
-
 /** end weare section **/
-
 
 /** Our section **/
 
 .padd_left0 {
-     padding-left: 0;
+  padding-left: 0;
 }
 
 .Our {
-     background: var(--general);
-     margin-top: 90px;
-     padding: 60px 0px;
+  background: var(--general);
+  margin-top: 90px;
+  padding: 60px 0px;
 }
 
 .Our .titlepage h2 {
-     color: #fff;
-     margin-bottom: 20px;
-     padding-bottom: 10px;
+  color: #fff;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
 }
 
 .Our .titlepage h2::after {
-     border-bottom: #fff solid 1px;
-     content: "";
-     position: absolute;
-     bottom: 0;
-     left: 0;
-     right: 0;
-     width: 100%;
-     max-width: 500px;
-     margin: 0 auto;
+  border-bottom: #fff solid 1px;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
 }
 
 .Our .titlepage span {
-     color: #fff;
+  color: #fff;
 }
 
 .yellow {
-     color: #f99b1d;
+  color: #f99b1d;
 }
 
 .Our_box i {
-     border: #fff solid 4px;
-     width: 160px;
-     height: 160px;
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     margin: 0 auto;
-     border-radius: 85px;
-     transition: ease-in all 0.1s;
-     cursor: pointer;
+  border: #fff solid 4px;
+  width: 160px;
+  height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  border-radius: 85px;
+  transition: ease-in all 0.1s;
+  cursor: pointer;
 }
 
 .Our_box i:hover {
-     width: 140px;
-     height: 140px;
-     transition: ease-in all 0.2s;
+  width: 140px;
+  height: 140px;
+  transition: ease-in all 0.2s;
 }
 
 .Our_box {
-     text-align: center;
+  text-align: center;
 }
 
 .Our_box h4 {
-     color: #fff;
-     text-transform: uppercase;
-     font-size: 30px;
-     line-height: 30px;
-     font-weight: 400;
-     padding: 0;
-     padding-top: 35px;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 400;
+  padding: 0;
+  padding-top: 35px;
 }
 
 .Our_box p {
-     color: #fff;
-     font-size: 17px;
-     line-height: 28px;
-     padding: 25px 0;
+  color: #fff;
+  font-size: 17px;
+  line-height: 28px;
+  padding: 25px 0;
 }
 
 .Our .read_more {
-     margin: 0 auto;
-     display: block;
+  margin: 0 auto;
+  display: block;
 }
 
-
 /** end Our section **/
-
 
 /** regist section **/
 
 .padd_leri0 {
-     padding-left: 0;
-     padding-right: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .regist .titlepage h2 {
-     margin-bottom: 20px;
-     padding-bottom: 10px
+  margin-bottom: 20px;
+  padding-bottom: 10px;
 }
 
 .regist .titlepage h2::after {
-     border-bottom: var(--general) solid 1px;
-     content: "";
-     position: absolute;
-     bottom: 0;
-     left: 0;
-     right: 0;
-     width: 100%;
-     max-width: 317px;
-     margin: 0 auto;
+  border-bottom: var(--general) solid 1px;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  max-width: 317px;
+  margin: 0 auto;
 }
 
 .regist .titlepage span {
-     font-size: 17px;
-     line-height: 28px;
+  font-size: 17px;
+  line-height: 28px;
 }
 
 .regist {
-     padding-top: 90px;
+  padding-top: 90px;
 }
 
 .main_form {
-     padding: 0px 50px;
+  padding: 0px 50px;
 }
 
 .regist .main_form .contactus {
-     border: #555555 solid 2px;
-     padding: 0px 19px;
-     margin-bottom: 20px;
-     width: 100%;
-     height: 60px;
-     background: #fff;
-     color: #999999;
-     font-size: 17px;
+  border: #555555 solid 2px;
+  padding: 0px 19px;
+  margin-bottom: 20px;
+  width: 100%;
+  height: 60px;
+  background: #fff;
+  color: #999999;
+  font-size: 17px;
 }
 
 .regist .main_form .register {
-     font-size: 17px;
-     transition: ease-in all 0.5s;
-     background-color: #000;
-     color: #fff;
-     padding: 13px 50px;
-     margin: 0 auto;
-     display: block;
-     margin-top: 30px;
+  font-size: 17px;
+  transition: ease-in all 0.5s;
+  background-color: #000;
+  color: #fff;
+  padding: 13px 50px;
+  margin: 0 auto;
+  display: block;
+  margin-top: 30px;
 }
 
 .regist .main_form .register:hover {
-     background-color: #cba6d3;
-     transition: ease-in all 0.5s;
-     color: #fff;
-     border-radius: 26px;
+  background-color: #cba6d3;
+  transition: ease-in all 0.5s;
+  color: #fff;
+  border-radius: 26px;
 }
 
 #regist *::placeholder {
-     color: #999999;
-     opacity: 1;
+  color: #999999;
+  opacity: 1;
 }
 
 .current {
-     color: #fff;
-     margin-top: -4px;
-     position: absolute;
+  color: #fff;
+  margin-top: -4px;
+  position: absolute;
 }
 
 .con_img figure {
-     margin: 0;
+  margin: 0;
 }
 
 .con_img figure img {
-     width: 100%;
+  width: 100%;
 }
-
 
 /** end regist section **/
 
 .read_more {
-     font-size: 17px;
-     background-color: #fff;
-     color: #000;
-     padding: 13px 0px;
-     width: 100%;
-     max-width: 190px;
-     text-align: center;
-     display: inline-block;
-     transition: ease-in all 0.5s;
+  font-size: 17px;
+  background-color: #fff;
+  color: #000;
+  padding: 13px 0px;
+  width: 100%;
+  max-width: 190px;
+  text-align: center;
+  display: inline-block;
+  transition: ease-in all 0.5s;
 }
 
 .read_more:hover {
-     background: val(--button);;
-     color: #fff;
-     border-radius: 26px;
-     transition: ease-in all 0.5s;
+  background: val(--button);
+  color: #fff;
+  border-radius: 26px;
+  transition: ease-in all 0.5s;
 }
-
 
 /** testimonial section **/
 
 .testimonial {
-     margin-top: 90px;
-     padding-bottom: 90px;
-     background: #afd3a6;
-     padding-top: 60px;
+  margin-top: 90px;
+  padding-bottom: 90px;
+  background: #afd3a6;
+  padding-top: 60px;
 }
 
 .testimonial .titlepage h2 {
-     margin-bottom: 20px;
-     color: #fff;
+  margin-bottom: 20px;
+  color: #fff;
 }
 
 .testimonial .titlepage h2::after {
-     border-bottom: #fff solid 1px;
-     content: "";
-     position: absolute;
-     bottom: 0;
-     left: 0;
-     right: 0;
-     width: 100%;
-     max-width: 259px;
-     margin: 0 auto;
+  border-bottom: #fff solid 1px;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  max-width: 259px;
+  margin: 0 auto;
 }
 
 .testimonial .titlepage p {
-     font-size: 17px;
-     color: #fff;
+  font-size: 17px;
+  color: #fff;
 }
 
 .testimonial_Carousel .carousel-caption {
-     position: inherit;
+  position: inherit;
 }
 
 .testimonial_box i img {
-     margin-top: -120px;
+  margin-top: -120px;
 }
 
 .testimonial_box h4 {
-     padding: 20px 0px 20px 0px;
-     font-size: 20px;
-     line-height: 25px;
-     color: #090808;
-     display: block;
-     font-weight: 500;
+  padding: 20px 0px 20px 0px;
+  font-size: 20px;
+  line-height: 25px;
+  color: #090808;
+  display: block;
+  font-weight: 500;
 }
 
 .testimonial_box {
-     text-align: center;
-     background: #fff;
-     box-shadow: #ddd 0px 0px 10px 0px;
-     padding: 0px 40px 40px 40px;
+  text-align: center;
+  background: #fff;
+  box-shadow: #ddd 0px 0px 10px 0px;
+  padding: 0px 40px 40px 40px;
 }
 
 .testimonial_Carousel .test_box .jons {
-     text-align: left;
-     margin-bottom: 4px;
-     margin-left: -10px;
+  text-align: left;
+  margin-bottom: 4px;
+  margin-left: -10px;
 }
 
 .testimonial_Carousel .test_box .jons i {
-     float: left;
-     background: transparent;
-     border-radius: 50px;
-     padding: 9px;
+  float: left;
+  background: transparent;
+  border-radius: 50px;
+  padding: 9px;
 }
 
 .testimonial_Carousel .test_box .jons h4 {
-     font-size: 25px;
-     color: #fff;
-     padding-top: 27px;
-     line-height: 32px;
-     padding-left: 20px;
-     display: inline-block;
+  font-size: 25px;
+  color: #fff;
+  padding-top: 27px;
+  line-height: 32px;
+  padding-left: 20px;
+  display: inline-block;
 }
 
 .testimonial_Carousel .test_box p {
-     font-size: 17px;
-     line-height: 28px;
-     color: #090808;
-     background: #fff;
-     padding: 40px;
-     border-radius: 90px;
+  font-size: 17px;
+  line-height: 28px;
+  color: #090808;
+  background: #fff;
+  padding: 40px;
+  border-radius: 90px;
 }
 
 .testimonial_Carousel .carousel-indicators {
-     bottom: -30px;
+  bottom: -30px;
 }
 
 .testimonial_Carousel .carousel-indicators li {
-     width: 56px;
-     height: 13px;
-     margin-right: -4px;
-     margin-left: -4px;
-     border-radius: 10px;
-     background: #fff;
+  width: 56px;
+  height: 13px;
+  margin-right: -4px;
+  margin-left: -4px;
+  border-radius: 10px;
+  background: #fff;
 }
 
 .testimonial_Carousel .carousel-indicators li.active {
-     background: #000;
+  background: #000;
 }
 
-
 /** end testimonial section **/
-
 
 /** footer **/
 
 .multi {
-     color: var(--general);
-     font-weight: bold;
-     font-size: 60px;
+  color: var(--general);
+  font-weight: bold;
+  font-size: 60px;
 }
 
 .footer {
-     font-family: Poppins;
-     background: #2b2b2b;
+  font-family: Poppins;
+  background: #2b2b2b;
 }
 
 .cont {
-     text-align: center;
-     margin-top: 80px;
+  text-align: center;
+  margin-top: 80px;
 }
 
 .cont h3 {
-     color: #fff;
-     font-size: 70px;
-     line-height: 90px;
-     font-weight: bold;
-     padding-bottom: 30px;
+  color: #fff;
+  font-size: 70px;
+  line-height: 90px;
+  font-weight: bold;
+  padding-bottom: 30px;
 }
 
 .cont span {
-     color: #fff;
-     font-size: 30px;
-     line-height: 30px;
-     padding: 30px 0px 30px 0px;
-     display: inline-block;
-     font-weight: bold;
+  color: #fff;
+  font-size: 30px;
+  line-height: 30px;
+  padding: 30px 0px 30px 0px;
+  display: inline-block;
+  font-weight: bold;
 }
 
 .cont p {
-     color: #fff;
-     font-size: 17px;
-     line-height: 30px;
-     padding: 0 130px;
-     padding-bottom: 60px;
+  color: #fff;
+  font-size: 17px;
+  line-height: 30px;
+  padding: 0 130px;
+  padding-bottom: 60px;
 }
 
 .copyright {
-     padding: 20px 0px;
+  padding: 20px 0px;
 }
 
 .copyright p {
-     color: #fff;
-     font-size: 18px;
-     line-height: 22px;
-     text-align: center;
-     border-top: #ffffff75 solid 1px;
-     padding-top: 15px;
+  color: #fff;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  border-top: #ffffff75 solid 1px;
+  padding-top: 15px;
 }
 
 .copyright a {
-     color: #fff;
+  color: #fff;
 }
 
 .copyright a:hover {
-     color: var(--general);
+  color: var(--general);
 }
-
 
 /** end footer **/
 
-
 /* The snackbar - position it at the bottom and in the middle of the screen */
 .invisibleButton {
-     color: transparent;
-     background-color: transparent;
-     cursor: default;
+  color: transparent;
+  background-color: transparent;
+  cursor: default;
+}
+
+.transparent {
+  color: transparent;
+  background-color: transparent;
 }
 
 #snackbar {
-     visibility: hidden; /* Hidden by default. Visible on click */
-     min-width: 250px; /* Set a default minimum width */
-     margin-left: -125px; /* Divide value of min-width by 2 */
-     background-color: lightgray; /* Black background color */
-     color: #fff; /* White text color */
-     text-align: center; /* Centered text */
-     border-radius: 2px; /* Rounded borders */
-     padding: 16px; /* Padding */
-     position: fixed; /* Sit on top of the screen */
-     z-index: 1; /* Add a z-index if needed */
-     left: 50%; /* Center the snackbar */
-     bottom: 30px; /* 30px from the bottom */
-   }
-   
-   /* Show the snackbar when clicking on a button (class added with JavaScript) */
-   #snackbar.show {
-     visibility: visible; /* Show the snackbar */
-     /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
-     However, delay the fade out process for 2.5 seconds */
-     -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
-     animation: fadein 0.5s, fadeout 0.5s 2.5s;
-   }
+  visibility: hidden; /* Hidden by default. Visible on click */
+  min-width: 250px; /* Set a default minimum width */
+  margin-left: -125px; /* Divide value of min-width by 2 */
+  background-color: lightgray; /* Black background color */
+  color: #fff; /* White text color */
+  text-align: center; /* Centered text */
+  border-radius: 2px; /* Rounded borders */
+  padding: 16px; /* Padding */
+  position: fixed; /* Sit on top of the screen */
+  z-index: 1; /* Add a z-index if needed */
+  left: 50%; /* Center the snackbar */
+  bottom: 30px; /* 30px from the bottom */
+}
 
-   #wrongSnackbar {
-     visibility: hidden; /* Hidden by default. Visible on click */
-     min-width: 250px; /* Set a default minimum width */
-     margin-left: -125px; /* Divide value of min-width by 2 */
-     background-color: lightgray; /* Black background color */
-     color: #fff; /* White text color */
-     text-align: center; /* Centered text */
-     border-radius: 2px; /* Rounded borders */
-     padding: 16px; /* Padding */
-     position: fixed; /* Sit on top of the screen */
-     z-index: 1; /* Add a z-index if needed */
-     left: 50%; /* Center the snackbar */
-     bottom: 30px; /* 30px from the bottom */
-   }
-   
-   /* Show the snackbar when clicking on a button (class added with JavaScript) */
-   #wrongSnackbar.show {
-     visibility: visible; /* Show the snackbar */
-     /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
+/* Show the snackbar when clicking on a button (class added with JavaScript) */
+#snackbar.show {
+  visibility: visible; /* Show the snackbar */
+  /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
      However, delay the fade out process for 2.5 seconds */
-     -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
-     animation: fadein 0.5s, fadeout 0.5s 2.5s;
-   }
-   
-   /* Animations to fade the snackbar in and out */
-   @-webkit-keyframes fadein {
-     from {bottom: 0; opacity: 0;}
-     to {bottom: 30px; opacity: 1;}
-   }
-   
-   @keyframes fadein {
-     from {bottom: 0; opacity: 0;}
-     to {bottom: 30px; opacity: 1;}
-   }
-   
-   @-webkit-keyframes fadeout {
-     from {bottom: 30px; opacity: 1;}
-     to {bottom: 0; opacity: 0;}
-   }
-   
-   @keyframes fadeout {
-     from {bottom: 30px; opacity: 1;}
-     to {bottom: 0; opacity: 0;}
-   }
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
 
-   /* Popup box BEGIN */
-.hover_bkgr_fricc{
-     background:rgba(0,0,0,.4);
-     cursor:pointer;
-     display:none;
-     height:100%;
-     position:fixed;
-     text-align:center;
-     top:0;
-     width:100%;
-     z-index:10000;
- }
- .hover_bkgr_fricc .helper{
-     display:inline-block;
-     height:100%;
-     vertical-align:middle;
- }
- .hover_bkgr_fricc > div {
-     background-color: #fff;
-     box-shadow: 10px 10px 60px #555;
-     display: inline-block;
-     height: auto;
-     max-width: 551px;
-     min-height: 100px;
-     vertical-align: middle;
-     width: 60%;
-     position: relative;
-     border-radius: 8px;
-     padding: 15px 5%;
- }
- .popupCloseButton {
-     background-color: #fff;
-     border: 3px solid #999;
-     border-radius: 50px;
-     cursor: pointer;
-     display: inline-block;
-     font-family: arial;
-     font-weight: bold;
-     position: absolute;
-     top: -20px;
-     right: -20px;
-     font-size: 25px;
-     line-height: 30px;
-     width: 30px;
-     height: 30px;
+#wrongSnackbar {
+  visibility: hidden; /* Hidden by default. Visible on click */
+  min-width: 250px; /* Set a default minimum width */
+  margin-left: -125px; /* Divide value of min-width by 2 */
+  background-color: lightgray; /* Black background color */
+  color: #fff; /* White text color */
+  text-align: center; /* Centered text */
+  border-radius: 2px; /* Rounded borders */
+  padding: 16px; /* Padding */
+  position: fixed; /* Sit on top of the screen */
+  z-index: 1; /* Add a z-index if needed */
+  left: 50%; /* Center the snackbar */
+  bottom: 30px; /* 30px from the bottom */
+}
+
+/* Show the snackbar when clicking on a button (class added with JavaScript) */
+#wrongSnackbar.show {
+  visibility: visible; /* Show the snackbar */
+  /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
+     However, delay the fade out process for 2.5 seconds */
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+/* Animations to fade the snackbar in and out */
+@-webkit-keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
+
+@keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
+
+/* Popup box BEGIN */
+.hover_bkgr_fricc {
+  background: rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  display: none;
+  height: 100%;
+  position: fixed;
+  text-align: center;
+  top: 0;
+  width: 100%;
+  z-index: 10000;
+}
+.hover_bkgr_fricc .helper {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+.hover_bkgr_fricc > div {
+  background-color: #fff;
+  box-shadow: 10px 10px 60px #555;
+  display: inline-block;
+  height: auto;
+  max-width: 551px;
+  min-height: 100px;
+  vertical-align: middle;
+  width: 60%;
+  position: relative;
+  border-radius: 8px;
+  padding: 15px 5%;
+}
+.popupCloseButton {
+  background-color: #fff;
+  border: 3px solid #999;
+  border-radius: 50px;
+  cursor: pointer;
+  display: inline-block;
+  font-family: arial;
+  font-weight: bold;
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  font-size: 25px;
+  line-height: 30px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+}
+.popupCloseButton:hover {
+  background-color: #ccc;
+}
+.trigger_popup_fricc {
+  cursor: pointer;
+  font-size: 20px;
+  margin: 20px;
+  display: inline-block;
+  font-weight: bold;
+}
+/* Popup box BEGIN */
+
+
+
+/*we need to style the popup with CSS so it is placed as a popup does*/
+#popup {
+  display: none;
+  position: absolute;
+  margin: 0 auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 0px 50px 2px #000;
+}
+
+/* Gallery */
+.divGallery.gallery {
+  border: 1px solid #ccc;
+}
+
+.divGallery.gallery:hover {
+  border: 1px solid #777;
+}
+
+.divGallery.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+.divGallery.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+  margin: 10px;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.hourglass {
+     display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  margin-top: 100px;
+  width: 30%;
+  height: auto;
+}
+
+.countdown {
      text-align: center;
- }
- .popupCloseButton:hover {
-     background-color: #ccc;
- }
- .trigger_popup_fricc {
-     cursor: pointer;
-     font-size: 20px;
-     margin: 20px;
-     display: inline-block;
-     font-weight: bold;
- }
- /* Popup box BEGIN */
+     font-size: calc(1.5em + 1vmin);
+     margin-top: 80px;
+   }

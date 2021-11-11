@@ -1,42 +1,46 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <!-- basic -->
-      <meta charset="utf-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <!-- mobile metas -->
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
-      <!-- site metas -->
-      <title>blessed</title>
-      <meta name="keywords" content="">
-      <meta name="description" content="">
-      <meta name="author" content="">
-      <!-- bootstrap css -->
-      <link rel="stylesheet" href="css/bootstrap.min.css">
-      <!-- style css -->
-      <link rel="stylesheet" href="css/style.css">
-      <!-- Responsive-->
-      <link rel="stylesheet" href="css/responsive.css">
-      <!-- fevicon -->
-      <link rel="icon" href="images/fevicon.png" type="image/gif" />
-      <!-- Scrollbar Custom CSS -->
-      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
-      <!-- Tweaks for older IEs-->
-      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
-      <!--[if lt IE 9]>
+
+<head>
+   <!-- basic -->
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <!-- mobile metas -->
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+   <!-- site metas -->
+   <title>blessed</title>
+   <meta name="keywords" content="">
+   <meta name="description" content="">
+   <meta name="author" content="">
+   <!-- bootstrap css -->
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+   <!-- style css -->
+   <link rel="stylesheet" href="css/style.css">
+   <!-- Responsive-->
+   <link rel="stylesheet" href="css/responsive.css">
+   <!-- fevicon -->
+   <link rel="icon" href="images/favicon.png" type="image/gif" />
+   <!-- Scrollbar Custom CSS -->
+   <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+   <!-- Tweaks for older IEs-->
+   <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
+      media="screen">
+   <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
-   </head>
-   <!-- body -->
-   <body class="main-layout">
-      <!-- header -->
-      <header>
-         <!-- header inner -->
-         <div  class="head_top">
+</head>
+<!-- body -->
+
+<body id="mainPage" class="main-layout">
+
+
+   <!-- header -->
+   <header>
+      <!-- header inner -->
+      <div id="headerMain" style="display: none">
+         <div class="head_top">
             <div class="container">
                <div class="header">
                   <div class="row">
@@ -44,25 +48,32 @@
                         <div class="full">
                            <div class="center-desk">
                               <div class="logo">
-                                 <a href="https://www.duden.de/rechtschreibung/Sternenlicht" target="_blank"><img src="images/logo.png" alt="#" /></a>
+                                 <a href="https://www.duden.de/rechtschreibung/Sternenlicht" target="_blank"><img
+                                       src="images/logo.png" alt="#" /></a>
                               </div>
                            </div>
                         </div>
                      </div>
                      <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
                         <nav class="navigation navbar navbar-expand-md navbar-dark ">
-                           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
-                           <span class="navbar-toggler-icon"></span>
+                           <button class="navbar-toggler" type="button" data-toggle="collapse"
+                              data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false"
+                              aria-label="Toggle navigation">
+                              <span class="navbar-toggler-icon"></span>
                            </button>
                            <div class="collapse navbar-collapse" id="navbarsExample04">
-                              <ul class="navbar-nav mr-auto">
+                              <!--<ul class="navbar-nav mr-auto">
                                  <li class="nav-item">
-                                    <a class="nav-link" href="#">Gallerie</a>
+                                    <a class="nav-link" href="gallery.html">
+                                       Gallerie
+                                   </a>
+                                    
                                  </li>
-                              </ul>
+                              </ul>-->
                               <ul class="navbar-nav mr-auto">
                                  <li class="nav-item">
-                                    <a class="nav-link" href="#">Support</a>
+                                    <button class="nav-link nav-item transparent" type="button"
+                                       onclick="openSupport()">Support</button>
                                  </li>
                               </ul>
                            </div>
@@ -87,24 +98,27 @@
                </div>
             </section>
          </div>
-      </header>
-      <!-- end banner -->
-      <!-- weare -->
+      </div>
+   </header>
+   <!-- end banner -->
+   <!-- weare -->
+   <div id="contentMain" style="display: none">
       <div class="weare">
          <div class="container">
             <div class="row">
                <div class="col-md-12">
                   <div class="titlepage">
                      <h2>Herzlichen Glückwunsch</h2>
-                     <span>Ihr habt es bis hier her geschafft. Aber die Reise ist noch nicht zu Ende - sie beginnt erst.</span>
+                     <span>Ihr habt es bis hier her geschafft. Aber die Reise ist noch nicht zu Ende - sie beginnt
+                        erst.</span>
                   </div>
                </div>
             </div>
-            
+
             <div class="row justify-content-center">
                <div class="col-md-6 margin_boo">
                   <div class="weare_box ">
-                     <figure><img src="images/Header_Image_03.JPG" alt="#"/></figure>
+                     <figure><img src="images/Header_Image_03.JPG" alt="#" /></figure>
                   </div>
                </div>
             </div>
@@ -113,12 +127,12 @@
                   <div class="row">
                      <div class="col-md-6 margin_boo">
                         <div class="weare_box ">
-                           <figure><img src="images/Header_Image_01.JPG" alt="#"/></figure>
+                           <figure><img src="images/Header_Image_01.JPG" alt="#" /></figure>
                         </div>
                      </div>
                      <div class="col-md-6">
                         <div class="weare_box">
-                           <figure><img src="images/Header_Image_02.JPG" alt="#"/></figure>
+                           <figure><img src="images/Header_Image_02.JPG" alt="#" /></figure>
                         </div>
                      </div>
                   </div>
@@ -174,7 +188,8 @@
                <div class="col-md-12">
                   <div class="titlepage">
                      <h2>Lasst uns beginnen...</h2>
-                     <span>Ihr findet überall kleine Hinweise auf das, was euch erwartet. Findet ihr alle Lösungsworte??</span>
+                     <span>Ihr findet überall kleine Hinweise auf das, was euch erwartet. Findet ihr alle
+                        Lösungsworte??</span>
                   </div>
                </div>
             </div>
@@ -188,16 +203,20 @@
                            <input id="inputThomas" class="contactus" placeholder="Welchen Beruf hat T.E.?" type="text">
                         </div>
                         <div class="col-md-12 ">
-                           <input id="inputStars" class="contactus" placeholder="Schaut in die Sterne. Was sagen sie euch?" type="text">
+                           <input id="inputStars" class="contactus"
+                              placeholder="Schaut in die Sterne. Was sagen sie euch?" type="text">
                         </div>
                         <div class="col-md-12 ">
-                           <input id="inputBochum" class="contactus" placeholder="Wer ist keine Schönheit und von Arbeit ganz grau?" type="text">
+                           <input id="inputBochum" class="contactus"
+                              placeholder="Wer ist keine Schönheit und von Arbeit ganz grau?" type="text">
                         </div>
                         <div class="col-md-12 ">
-                           <input id="inputStarlight" class="contactus" placeholder="Geduld ist eine Tugend..." title="Das Zeichen der Ehe wird euch führen." type="text">
+                           <input id="inputStarlight" class="contactus" placeholder="Geduld ist eine Tugend..."
+                              title="Das Zeichen der Ehe wird euch führen." type="text">
                         </div>
                         <div class="col-sm-12">
-                          <button class="register trigger_popup_fricc" type="button" onclick="checkAnswers()">Abschicken</button>                           
+                           <button class="register trigger_popup_fricc" type="button"
+                              onclick="checkAnswers()">Abschicken</button>
                         </div>
                      </div>
                   </form>
@@ -207,14 +226,17 @@
          <div id="successPopup" class="hover_bkgr_fricc">
             <span class="helper"></span>
             <div>
-                <div class="popupCloseButton">&times;</div>
-                <p>Sehr gut! <br />Bitte tragt nachfolgend einige Wochenenden ein, die ihr anbieten könnt. Unser Kundenservice tritt dann für alles weitere mit Euch in Verbindung. <br /><br /> Bei Fragen und Problemen, bitte an den Support wenden.<br /><br /><br />
-                  <a href="https://calendar.google.com/calendar/u/2?cid=ZGVyLnRvbGxlLmthbGVuZGVyQGdtYWlsLmNvbQ" target="_blank">Hier geht es weiter...</a>
+               <div class="popupCloseButton">&times;</div>
+               <p>Sehr gut! <br />Bitte tragt nachfolgend einige Wochenenden ein, die ihr anbieten könnt. Unser
+                  Kundenservice tritt dann für alles weitere mit Euch in Verbindung. <br /><br /> Bei Fragen und
+                  Problemen, bitte an den Support wenden.<br /><br /><br />
+                  <a href="https://calendar.google.com/calendar/u/2?cid=ZGVyLnRvbGxlLmthbGVuZGVyQGdtYWlsLmNvbQ"
+                     target="_blank">Hier geht es weiter...</a>
                </p>
             </div>
-        </div>
+         </div>
       </div>
-      <div id="wrongSnackbar">Irgendwas stimmt hier nicht...</div>
+      <div id="wrongSnackbar">Irgendwas stimmt hier (noch) nicht...</div>
       <!-- end regist -->
       <!-- testimonial -->
       <div class="testimonial">
@@ -223,7 +245,7 @@
                <div class="col-md-12">
                   <div class="titlepage">
                      <h2>Was andere sagen...</h2>
-                    </div>
+                  </div>
                </div>
             </div>
             <div class="row">
@@ -239,19 +261,19 @@
                            <div class="container">
                               <div class="carousel-caption ">
                                  <div class="row">
-                                    <div  class="col-md-6">
+                                    <div class="col-md-6">
                                        <div class="test_box">
                                           <div class="jons">
-                                             <i><img src="images/Heiko.png" alt="#"/></i>
+                                             <i><img src="images/Heiko.png" alt="#" /></i>
                                              <h4>Heiko R.</h4>
                                           </div>
                                           <p>Was ein tolles Paar. Da kann man nur neidisch sein.</p>
                                        </div>
                                     </div>
-                                    <div  class="col-md-6">
+                                    <div class="col-md-6">
                                        <div class="test_box">
                                           <div class="jons">
-                                             <i><img src="images/Nanni.png" alt="#"/></i>
+                                             <i><img src="images/Nanni.png" alt="#" /></i>
                                              <h4>Nanni S.</h4>
                                           </div>
                                           <p>Schöne Frau, schöner Mann - mehr kann man da nicht zu sagen.</p>
@@ -265,19 +287,20 @@
                            <div class="container">
                               <div class="carousel-caption">
                                  <div class="row">
-                                    <div  class="col-md-6">
+                                    <div class="col-md-6">
                                        <div class="test_box">
                                           <div class="jons">
-                                             <i><img src="images/Thomas.png" alt="#"/></i>
+                                             <i><img src="images/Thomas.png" alt="#" /></i>
                                              <h4>T. E.</h4>
                                           </div>
-                                          <p>Tolle Menschen! Ich freue mich schon, die beiden bei uns begrüßen zu dürfen.</p>
+                                          <p>Tolle Menschen! Ich freue mich schon, die beiden bei uns begrüßen zu
+                                             dürfen.</p>
                                        </div>
                                     </div>
-                                    <div  class="col-md-6">
+                                    <div class="col-md-6">
                                        <div class="test_box">
                                           <div class="jons">
-                                             <i><img src="images/Simon.png" alt="#"/></i>
+                                             <i><img src="images/Simon.png" alt="#" /></i>
                                              <h4>Simon H.</h4>
                                           </div>
                                           <p>Einfach WOW!</p>
@@ -291,19 +314,19 @@
                            <div class="container">
                               <div class="carousel-caption">
                                  <div class="row">
-                                    <div  class="col-md-6">
+                                    <div class="col-md-6">
                                        <div class="test_box">
                                           <div class="jons">
-                                             <i><img src="images/Simon.png" alt="#"/></i>
-                                             <h4>Simon H.</h4>
+                                             <i><img src="images/Jan.png" alt="#" /></i>
+                                             <h4>Jan W.</h4>
                                           </div>
                                           <p>Man muss sie einfach gern haben - bleibt so, wie ihr seid.</p>
                                        </div>
                                     </div>
-                                    <div  class="col-md-6">
+                                    <div class="col-md-6">
                                        <div class="test_box">
                                           <div class="jons">
-                                             <i><img src="images/jons_img2.png" alt="#"/></i>
+                                             <i><img src="images/Chris.png" alt="#" /></i>
                                              <h4>Christoph D.</h4>
                                           </div>
                                           <p>Was hätte ich gerne dieses Gemächt...</p>
@@ -315,85 +338,119 @@
                         </div>
                      </div>
                      <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                     <span class="sr-only">Previous</span>
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
                      </a>
                      <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                     <span class="sr-only">Next</span>
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
                      </a>
                   </div>
                </div>
             </div>
          </div>
       </div>
-      <!-- end testimonial -->
-      <!--  footer -->
-      <footer>
+   </div>
+   <!-- end testimonial -->
+   <!--  footer -->
+   <footer>
+      <div id="footerMain" style="display: none">
          <div class="footer">
-            
+
             <div class="copyright">
                <div class="container">
                   <div class="row">
                      <div class="col-md-12">
-                        <button class="invisibleButton" onclick="showSnackbar('snackbar')"><img src="images/stars.png" alt="#" /></button>           
-                                 <div id="snackbar">4 Rollen</div>
-                        <p>Copyright 2019 All Right Reserved By <a href="https://html.design/"> Free  html Templates</a></p>
-                        
+                        <button class="invisibleButton" onclick="showSnackbar('snackbar')"><img src="images/stars.png"
+                              alt="#" /></button>
+                        <div id="snackbar">4 Rollen</div>
+                        <p>Copyright 2019 All Right Reserved By <a href="https://html.design/"> Free html Templates</a>
+                        </p>
+
                      </div>
                   </div>
                </div>
             </div>
          </div>
-      </footer>
+      </div>
+   </footer>
 
-      <!-- end footer -->
-      <!-- Javascript files-->
+   <!-- let's call the following div as the POPUP FRAME -->
+   <div id="popup" class="popup panel panel-primary">
+      <!-- and here comes the image -->
+      <img src="images/trap.gif" alt="It's a trap">
+      <!-- Now this is the button which closes the popup-->
+      <div class="panel-footer">
+         <button id="close" class="popupCloseButton">&times;</button>
+      </div>
+      <!-- and finally we close the POPUP FRAME-->
+      <!-- everything on it will show up within the popup so you can add more things not just an image -->
+   </div>
 
-<!-- The actual snackbar -->
-      <script src="js/jquery.min.js"></script>
-      <script src="js/popper.min.js"></script>
-      <script src="js/bootstrap.bundle.min.js"></script>
-      <script src="js/jquery-3.0.0.min.js"></script>
-      <script src="js/plugin.js"></script>
-      <script>
-         const sThomas = "Bürgermeister";
-         const sStars  = "4 Rollen";
-         const sBochum = "Bochum";
-         const sStarlight = "Sternenlicht";
+   <!-- end footer -->
+   <!-- Javascript files-->
 
-         const sCalenderUrl = "https://calendar.google.com/calendar/u/2?cid=ZGVyLnRvbGxlLmthbGVuZGVyQGdtYWlsLmNvbQ";
+   <!-- The actual snackbar -->
+   <script src="js/jquery.min.js"></script>
+   <script src="js/popper.min.js"></script>
+   <script src="js/bootstrap.bundle.min.js"></script>
+   <script src="js/jquery-3.0.0.min.js"></script>
+   <script src="js/plugin.js"></script>
+   <script>
+      const sThomas = "Bürgermeister";
+      const sStars = "4 Rollen";
+      const sBochum = "Bochum";
+      const sStarlight = "Sternenlicht";
 
-         function showSnackbar(sId) {
-           var oElement = document.getElementById(sId);
-           oElement.className = "show";
-           setTimeout(function(){ oElement.className = oElement.className.replace("show", ""); }, 3000);
+      const sCalenderUrl = "https://calendar.google.com/calendar/u/2?cid=ZGVyLnRvbGxlLmthbGVuZGVyQGdtYWlsLmNvbQ";
+
+      function showSnackbar(sId) {
+         var oElement = document.getElementById(sId);
+         oElement.className = "show";
+         setTimeout(function () { oElement.className = oElement.className.replace("show", ""); }, 3000);
+      }
+
+      function showPopup(sId) {
+         $('.hover_bkgr_fricc').show();
+      }
+
+      function checkAnswers() {
+         var oInputThomas = document.getElementById("inputThomas");
+         var oInputStars = document.getElementById("inputStars");
+         var oInputBochum = document.getElementById("inputBochum");
+         var oInputStarlight = document.getElementById("inputStarlight");
+
+         if (oInputThomas.value === sThomas
+            && oInputStars.value === sStars
+            && oInputBochum.value === sBochum
+            && oInputStarlight.value === sStarlight) {
+            this.showPopup("successPopup");
+         } else {
+            this.showSnackbar("wrongSnackbar");
          }
+      }
 
-         function showPopup(sId) {
-            $('.hover_bkgr_fricc').show();
-         }
+      function openSupport() {
+         $("#popup").hide().fadeIn(1000);
 
-         function checkAnswers() {
-            var oInputThomas    = document.getElementById("inputThomas");
-            var oInputStars     = document.getElementById("inputStars");
-            var oInputBochum    = document.getElementById("inputBochum");
-            var oInputStarlight = document.getElementById("inputStarlight");
+         //close the POPUP if the button with id="close" is clicked
+         $("#close").on("click", function (e) {
+            e.preventDefault();
+            $("#popup").fadeOut(1000);
+         });
+      }
+   </script>
+   <!-- sidebar -->
+   <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+   <script src="js/custom.js"></script>
+   <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+</body>
 
-            if (  oInputThomas.value    === sThomas
-               && oInputStars.value     === sStars
-               && oInputBochum.value    === sBochum
-               && oInputStarlight.value === sStarlight ) {
-                  this.showPopup("successPopup");
-               } else {
-                  this.showSnackbar("wrongSnackbar");
-               }
-         }
-         </script>
-      <!-- sidebar -->
-      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-      <script src="js/custom.js"></script>
-      <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
-   </body>
+
+
+<div id="countdown">
+   <p class="countdown" id="demo"></p>
+   <img class="hourglass" src="images/hourglass.gif">
+</div>
+
 </html>
-
