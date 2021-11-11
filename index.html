@@ -62,14 +62,14 @@
                               <span class="navbar-toggler-icon"></span>
                            </button>
                            <div class="collapse navbar-collapse" id="navbarsExample04">
-                              <!--<ul class="navbar-nav mr-auto">
+                              <ul class="navbar-nav mr-auto">
                                  <li class="nav-item">
                                     <a class="nav-link" href="gallery.html">
                                        Gallerie
-                                   </a>
-                                    
+                                    </a>
+
                                  </li>
-                              </ul>-->
+                              </ul>
                               <ul class="navbar-nav mr-auto">
                                  <li class="nav-item">
                                     <button class="nav-link nav-item transparent" type="button"
@@ -213,6 +213,9 @@
                         <div class="col-md-12 ">
                            <input id="inputStarlight" class="contactus" placeholder="Geduld ist eine Tugend..."
                               title="Das Zeichen der Ehe wird euch führen." type="text">
+                        </div>
+                        <div class="col-md-12 ">
+                           <input id="inputGallery" class="contactus" placeholder="There's No Play Like It" type="text">
                         </div>
                         <div class="col-sm-12">
                            <button class="register trigger_popup_fricc" type="button"
@@ -361,8 +364,8 @@
                <div class="container">
                   <div class="row">
                      <div class="col-md-12">
-                        <button class="invisibleButton stars" onclick="showSnackbar('snackbar')"><img src="images/stars.png"
-                              alt="#" /></button>
+                        <button class="invisibleButton stars" onclick="showSnackbar('snackbar')"><img
+                              src="images/stars.png" alt="#" /></button>
                         <div id="snackbar">4 Rollen</div>
                         <p>Copyright 2019 All Right Reserved By <a href="https://html.design/"> Free html Templates</a>
                         </p>
@@ -401,6 +404,7 @@
       const sStars = "4 Rollen";
       const sBochum = "Bochum";
       const sStarlight = "Sternenlicht";
+      const sGallery = "Liebe";
 
       const sCalenderUrl = "https://calendar.google.com/calendar/u/2?cid=ZGVyLnRvbGxlLmthbGVuZGVyQGdtYWlsLmNvbQ";
 
@@ -419,11 +423,13 @@
          var oInputStars = document.getElementById("inputStars");
          var oInputBochum = document.getElementById("inputBochum");
          var oInputStarlight = document.getElementById("inputStarlight");
+         var oInputGallery = document.getElementById("inputGallery");
 
          if (oInputThomas.value === sThomas
             && oInputStars.value === sStars
             && oInputBochum.value === sBochum
-            && oInputStarlight.value === sStarlight) {
+            && oInputStarlight.value === sStarlight
+            && oInputGallery.value === sGallery) {
             this.showPopup("successPopup");
          } else {
             this.showSnackbar("wrongSnackbar");
