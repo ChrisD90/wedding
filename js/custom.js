@@ -13,6 +13,9 @@ $(function () {
   }, 1500);
 
   $(document).ready(function () {
+    
+    document.getElementById("countdown").style.display = "none";
+
     // Set the date we're counting down to
     var countDownDate = new Date("Jul 16, 2022 00:00:00").getTime();
 
@@ -38,6 +41,7 @@ $(function () {
 
       // If the count down is over, write some text
       if (distance > 0) {
+        document.getElementById("countdown").style.display = "inline";
       } else {
         clearInterval(x);
         try {
