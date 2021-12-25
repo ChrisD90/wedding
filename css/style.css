@@ -1068,3 +1068,19 @@ div.desc {
   max-width: 50px;
   max-height: 25px;
 }
+
+.console {
+  background-color: black;
+}
+
+.consoleInput {
+  background-color: black;
+  border-color: transparent;
+  color: green;
+  font-family:monospace;
+  font-size: calc(1.5em + 1vmin);
+}
+
+.backgroundBlack {
+  background-color: black;
+}

@@ -13,16 +13,23 @@ $(function () {
   }, 1500);
 
   $(document).ready(function () {
-    
     document.getElementById("countdown").style.display = "none";
+    document.getElementById("console").style.display = "none";
 
     // Set the date we're counting down to
     var countDownDate = new Date("Jul 16, 2022 00:00:00").getTime();
+
+    var sNumbers = "4815162342";
 
     // Update the count down every 1 second
     var x = setInterval(function () {
       // Get today's date and time
       var now = new Date().getTime();
+
+      var sInput = document
+        .getElementById("inputCopnsole")
+        .value.replace(/ /g, "");
+      console.log(sInput);
 
       // Find the distance between now and the count down date
       var distance = countDownDate - now;
@@ -41,7 +48,17 @@ $(function () {
 
       // If the count down is over, write some text
       if (distance > 0) {
-        document.getElementById("countdown").style.display = "inline";
+        if (sInput === sNumbers) {
+          document.getElementById("countdown").style.display = "inline";
+          document
+            .getElementById("mainPage")
+            .classList.remove("backgroundBlack");
+          document.getElementById("console").style.display = "none";
+        } else {
+          document.getElementById("countdown").style.display = "none";
+          document.getElementById("mainPage").classList.add("backgroundBlack");
+          document.getElementById("console").style.display = "inline";
+        }
       } else {
         clearInterval(x);
         try {
@@ -49,6 +66,7 @@ $(function () {
           document.getElementById("contentMain").style.display = "inline";
           document.getElementById("footerMain").style.display = "inline";
           document.getElementById("countdown").style.display = "none";
+          document.getElementById("console").style.display = "none";
         } catch {
           //do nothing
         }

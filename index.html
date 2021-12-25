@@ -35,7 +35,10 @@
 
 <body id="mainPage" class="main-layout">
 
-
+   <div id="console" class="console">
+      <label for="inputCopnsole" class="consoleInput">>:</label>
+      <input id="inputCopnsole" class="consoleInput" type="text" autofocus>
+   </div>
    <!-- header -->
    <header>
       <!-- header inner -->
@@ -443,6 +446,10 @@
             $("#popup").fadeOut(1000);
          });
       }
+
+      function onLostInput() {
+
+      }
    </script>
    <!-- sidebar -->
    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
@@ -450,7 +457,7 @@
    <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
 </body>
 
-<div id="countdown">
+<div id="countdown" style="display: none;">
    <p class="countdown" id="demo"></p>
    <img class="hourglass" src="images/hourglass.gif">
 </div>
